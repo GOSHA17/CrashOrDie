@@ -1315,6 +1315,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 40
+  _healEffect: {fileID: 0}
+  _hitEffect: {fileID: 1758473627833946668, guid: 9b21333b068a5084ba09535839bee3c8, type: 3}
 --- !u!82 &-7176748786337744544
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1427,7 +1429,7 @@ MonoBehaviour:
   _healSound: {fileID: 0}
   _hitSound: {fileID: 0}
   _deathSound: {fileID: 0}
-  _walkSound: {fileID: 8300000, guid: 76cdcdaeff00144e09ef5f0c99e109d0, type: 3}
+  _walkSound: {fileID: 0}
 --- !u!1 &9011800774509550118
 GameObject:
   m_ObjectHideFlags: 0
