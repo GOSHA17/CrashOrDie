@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour, IMovable
     private LVLSystem _lvlSystem;
     private NavMeshAgent _agent;
     private Transform _playerTransform;
+    private Animator _animator;
     private float _speed;
 
     public bool IsMoving()
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour, IMovable
         _agent = GetComponent<NavMeshAgent>();
         _attackScript = GetComponent<AttackScript>();
         _healthSystem = GetComponent<HealthSystem>();
+        _animator = GetComponent<Animator>();
 
         _healthSystem.Died += Die;
         _speed = _normalSpeed;
@@ -41,10 +43,12 @@ public class Enemy : MonoBehaviour, IMovable
         {
             Vector3 directionFromPlayer = transform.position - _playerTransform.position;
             _agent.SetDestination(_playerTransform.position + directionFromPlayer * _offset);
+            _animator.SetBool("isAngry", false);
         }
         else
         {
             _attackScript.Attack();
+            _animator.SetBool("isAngry", true);
         }
     }
 
@@ -52,6 +56,6 @@ public class Enemy : MonoBehaviour, IMovable
     {
         _healthSystem.Died -= Die;
         _lvlSystem.AddXP(_xp);
-        Destroy(gameObject);
+        Destroy(gameObject, 0.2f);
     }
 }

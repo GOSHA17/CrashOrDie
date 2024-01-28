@@ -1281,7 +1281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackDamage: 5
-  _attackRadius: 0.5
+  _attackRadius: 0.7
   _attackPoint: {fileID: 2446906378894816101}
   _whoIsEnemy:
     serializedVersion: 2
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _xp: 20
   _normalSpeed: 3
-  _offset: 0.85
+  _offset: 0.9
 --- !u!114 &2700652267901917133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHealth: 40
-  _healEffect: {fileID: 0}
+  _healEffect: {fileID: 9017484664307500583, guid: 1245b8d2997d5b34fb1637be70a7eb05, type: 3}
   _hitEffect: {fileID: 1758473627833946668, guid: 9b21333b068a5084ba09535839bee3c8, type: 3}
 --- !u!82 &-7176748786337744544
 AudioSource:
@@ -1425,11 +1425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79ba93f46408a45cd986dac38b89ac2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lvlUpSound: {fileID: 0}
-  _healSound: {fileID: 0}
+  _lvlUpSound: {fileID: 8300000, guid: da7b7c25bb38247df9038220fa4853da, type: 3}
+  _healSound: {fileID: 8300000, guid: 7463e5e78bb6baa4b8caeec3645d5ae7, type: 3}
   _hitSound: {fileID: 0}
   _deathSound: {fileID: 0}
-  _walkSound: {fileID: 0}
+  _walkSound: {fileID: 8300000, guid: 76cdcdaeff00144e09ef5f0c99e109d0, type: 3}
 --- !u!1 &9011800774509550118
 GameObject:
   m_ObjectHideFlags: 0
