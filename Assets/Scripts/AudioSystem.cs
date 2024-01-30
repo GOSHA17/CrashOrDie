@@ -8,6 +8,7 @@ public class AudioSystem : MonoBehaviour
     [SerializeField] private AudioClip _hitSound;
     [SerializeField] private AudioClip _deathSound;
     [SerializeField] private AudioClip _walkSound;
+    [SerializeField] private AudioClip _attackSound;
 
     private HealthSystem _healthSystem;
     private IMovable _moveSystem;
